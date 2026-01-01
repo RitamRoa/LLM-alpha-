@@ -23,6 +23,7 @@ Defination:
 
 
 Explanation: 
+
     1. n_alayer : No of layers to understand .... More layers more computations. starts from simple to complex. 
     2. n_embd   : shows the size of the vector which it was given, meaning like is this related to that or not... is the word "bank" related to finance or not. tokens higher then wider and richer words but more ram.
     3. n_head   : This will tell how multi area the search needs to be "nulti-aspect awareness".
