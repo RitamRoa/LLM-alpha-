@@ -36,15 +36,12 @@ Explanation:
                        n_head = 24: 24 full sets of (Q+K+V) workers → diverse focus.
                        n_head_kv = 8: Only 8 unique (K+V) note‑sets made.
 
-Head1: Q1 + K1V1
-Head2: Q2 + K2V2  ← 24 separate notebooks!
-...
-Head24: Q24 + K24V24
-
-Group1 KV: K1V1  ← Shared by Q1,Q2,Q3
-Group2 KV: K2V2  ← Shared by Q4,Q5,Q6
-...
-Group8 KV: K8V8  ← Shared by Q22,Q23,Q24
+     Head1: Q1 + K1V1
+     Head2: Q2 + K2V2  ← 24 separate notebooks!
+     Head24: Q24 + K24V24
+     Group1 KV: K1V1  ← Shared by Q1,Q2,Q3
+     Group2 KV: K2V2  ← Shared by Q4,Q5,Q6
+     Group8 KV: K8V8  ← Shared by Q22,Q23,Q24
 
       5. n_ff   : Feed-Forward-> more "intelligent" it seems. 
       6. n_ctx  : active tokens. 
